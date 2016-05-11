@@ -19,11 +19,11 @@ The undead are out for your flesh and your not all people are to be trusted. The
     <td>4</td> 
   </tr>
  <tr>
-    <td>As a survivalist, I want to be able to add places I found interesting to my map as POIs. Corelocation, CLLocationManager, Coredata </td>
+    <td>As a survivalist, I want to be able to add places I found interesting to my map as POIs. CoreLocation, CLLocationManager, CoreData </td>
     <td>3</td> 
   </tr>
  <tr>
-    <td>As a survivalist, I want to be record personal movement. Technical requirements: MapKit, Corelocation, CLLocationManager</td>
+    <td>As a survivalist, I want to be record personal movement. Technical requirements: MapKit, CoreLocation, CLLocationManager</td>
     <td>4</td> 
   </tr>
  <tr>
