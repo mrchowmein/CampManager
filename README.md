@@ -15,23 +15,23 @@ The undead are out for your flesh and your not all people are to be trusted. The
     <td><b> Difficulty </b> </td> 
   </tr>
  <tr>
-    <td>As a survivalist, I want to be able to look at a map. MapKit</td>
+    <td>As a survivalist, I want to be able to look at a map. Technical requirement: MapKit</td>
     <td>4</td> 
   </tr>
  <tr>
-    <td>As a survivalist, I want to be able to add places I found interesting to my map as POIs. CoreLocation, CLLocationManager, CoreData </td>
+    <td>As a survivalist, I want to be able to add places I found interesting to my map as POIs. Technical requirement: CoreLocation, CLLocationManager, CoreData </td>
     <td>3</td> 
   </tr>
  <tr>
-    <td>As a survivalist, I want to be record personal movement. Technical requirements: MapKit, CoreLocation, CLLocationManager</td>
+    <td>As a survivalist, I want to be record personal movement. Technical requirement: MapKit, CoreLocation, CLLocationManager</td>
     <td>4</td> 
   </tr>
  <tr>
-    <td>As a survivalist, I want to be able to take readings of my health such as sleep, heart rate.Technical requirements: HealthKit. CoreData</td>
+    <td>As a survivalist, I want to be able to take readings of my health such as sleep, heart rate.Technical requirement: HealthKit. CoreData</td>
     <td>3</td> 
   </tr>
  <tr>
-    <td>As a survivalist, I want to be able to check and store air pressure. Technical requirements: CMAltimeter, CoreData</td>
+    <td>As a survivalist, I want to be able to check and store air pressure. Technical requirement: CMAltimeter, CoreData</td>
     <td>3</td> 
   </tr>
  <tr>
