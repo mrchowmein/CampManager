@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="enk-Aj-7rC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="enk-Aj-7rC">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,36 +19,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj9-mr-DZc">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj9-mr-DZc">
                                 <rect key="frame" x="172" y="300" width="30" height="30"/>
                                 <state key="normal" title="Map"/>
                                 <connections>
-                                    <segue destination="u2c-s2-dJ4" kind="show" id="fIR-mT-7oU"/>
+                                    <segue destination="u2c-s2-dJ4" kind="show" id="IpK-1I-GOd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtw-iu-eAw">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtw-iu-eAw">
                                 <rect key="frame" x="165" y="347" width="45" height="30"/>
                                 <state key="normal" title="Health"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ops-ZE-4o6">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ops-ZE-4o6">
                                 <rect key="frame" x="155" y="399" width="64" height="30"/>
                                 <state key="normal" title="Inventory"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc0-nv-a34">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc0-nv-a34">
                                 <rect key="frame" x="144" y="457" width="86" height="30"/>
                                 <state key="normal" title="Membership"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qj3-Zu-z2Y">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qj3-Zu-z2Y">
                                 <rect key="frame" x="144" y="513" width="88" height="30"/>
                                 <state key="normal" title="Survival Tips"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camp Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-RE-Psc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Camp Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-RE-Psc">
                                 <rect key="frame" x="46" y="141" width="284" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="nTz-De-M3C"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -76,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="80.5" y="224.5"/>
+            <point key="canvasLocation" x="442.5" y="191.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="IwI-Si-RVq">
@@ -94,48 +95,63 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cEH-ap-Pjq">
-                                <rect key="frame" x="0.0" y="44" width="375" height="422"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="422" id="jSl-Jt-bWB"/>
+                                    <constraint firstAttribute="height" constant="603" id="jSl-Jt-bWB"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="u2c-s2-dJ4" id="yzq-i5-1Db"/>
+                                </connections>
                             </mapView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fAw-dH-4R4">
-                                <rect key="frame" x="0.0" y="463" width="375" height="204"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="MsE-NM-mwU">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MsE-NM-mwU" id="Vrm-wZ-hfu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cEH-ap-Pjq" firstAttribute="top" secondItem="sS0-CZ-xhC" secondAttribute="bottom" id="GQU-Wk-mvc"/>
+                            <constraint firstItem="cEH-ap-Pjq" firstAttribute="top" secondItem="sS0-CZ-xhC" secondAttribute="bottom" constant="20" id="GQU-Wk-mvc"/>
                             <constraint firstAttribute="trailing" secondItem="cEH-ap-Pjq" secondAttribute="trailing" id="Him-Um-S4z"/>
-                            <constraint firstItem="Jke-Ob-ENW" firstAttribute="top" secondItem="cEH-ap-Pjq" secondAttribute="bottom" constant="201" id="K3A-GT-2w1"/>
-                            <constraint firstItem="fAw-dH-4R4" firstAttribute="bottom" secondItem="Jke-Ob-ENW" secondAttribute="top" id="L8b-8F-sPY"/>
+                            <constraint firstItem="Jke-Ob-ENW" firstAttribute="top" secondItem="cEH-ap-Pjq" secondAttribute="bottom" id="K3A-GT-2w1"/>
                             <constraint firstItem="cEH-ap-Pjq" firstAttribute="trailing" secondItem="sS0-CZ-xhC" secondAttribute="trailing" id="RbK-5t-6I2"/>
-                            <constraint firstItem="fAw-dH-4R4" firstAttribute="top" secondItem="Fr4-o4-Yd6" secondAttribute="bottom" constant="399" id="Shl-dq-tGi"/>
                             <constraint firstItem="cEH-ap-Pjq" firstAttribute="leading" secondItem="sS0-CZ-xhC" secondAttribute="leading" id="Sy3-K4-Lge"/>
-                            <constraint firstItem="fAw-dH-4R4" firstAttribute="trailing" secondItem="cEH-ap-Pjq" secondAttribute="trailing" id="ZEL-yX-6CU"/>
                             <constraint firstItem="cEH-ap-Pjq" firstAttribute="leading" secondItem="B4f-1u-uWi" secondAttribute="leading" id="oNV-5l-iPb"/>
-                            <constraint firstItem="fAw-dH-4R4" firstAttribute="leading" secondItem="cEH-ap-Pjq" secondAttribute="leading" id="xg0-WI-MvI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qTk-aS-DH6">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="aZ8-Y3-mtI">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="0dx-yG-y1g"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" id="aYm-bD-3b7">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e8F-7u-Ob4">
+                                    <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Type"/>
+                                    <connections>
+                                        <action selector="mapType:" destination="u2c-s2-dJ4" eventType="touchUpInside" id="vBh-CS-3cm"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="boI-Ts-TcQ">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7iK-H3-zdP">
+                                    <rect key="frame" x="185" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Locate"/>
+                                    <connections>
+                                        <action selector="findMeButton:" destination="u2c-s2-dJ4" eventType="touchUpInside" id="6ge-Vk-gMq"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="MapView" destination="cEH-ap-Pjq" id="wVJ-9S-ere"/>
+                        <outlet property="mapView" destination="cEH-ap-Pjq" id="jmQ-MO-fp9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNN-61-tRy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="553.5" y="224.5"/>
+            <point key="canvasLocation" x="939.5" y="191.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wdb-6B-fG0">
@@ -154,4 +170,7 @@
             <point key="canvasLocation" x="-557" y="225"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0dx-yG-y1g"/>
+    </inferredMetricsTieBreakers>
 </document>
