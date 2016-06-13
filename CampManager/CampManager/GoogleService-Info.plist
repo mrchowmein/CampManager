@@ -2,25 +2,39 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>TRACKING_ID</key>
-	<string>UA-77544714-1</string>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>61698907542-qnb869roh2k0k000p9nhr2h6kngrhk3q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.61698907542-qnb869roh2k0k000p9nhr2h6kngrhk3q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD-epSsRu-vyvGCV5VGidADh7sk6h-XR7U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>61698907542</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.jasonchan.CampManager</string>
 	<key>PROJECT_ID</key>
-	<string>campmanager-2db55</string>
+	<string>project-5915014476189823859</string>
+	<key>STORAGE_BUCKET</key>
+	<string>project-5915014476189823859.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
-	<key>IS_ANALYTICS_ENABLED</key>
 	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
 	<false/>
 	<key>IS_GCM_ENABLED</key>
-	<false/>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<false/>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:679983855108:ios:0f7af869390f18ac</string>
+	<string>1:61698907542:ios:0f7af869390f18ac</string>
+	<key>DATABASE_URL</key>
+	<string>https://project-5915014476189823859.firebaseio.com</string>
 </dict>
 </plist>
