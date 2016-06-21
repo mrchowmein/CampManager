@@ -16,6 +16,8 @@
 		ED160B8A1CDC33E4000EA3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED160B881CDC33E4000EA3CD /* LaunchScreen.storyboard */; };
 		ED160B921CDC3778000EA3CD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED160B911CDC3778000EA3CD /* MapViewController.swift */; };
 		ED4EB5B91CEEA79E00189E8D /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4EB5B71CEEA79E00189E8D /* Pin.swift */; };
+		EDA8EA771D0FA9C000F2C859 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8EA761D0FA9C000F2C859 /* InventoryViewController.swift */; };
+		EDA8EA791D0FAA8F00F2C859 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8EA781D0FAA8F00F2C859 /* item.swift */; };
 		EDE6C33F1D093C4300FD5647 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE6C33E1D093C4300FD5647 /* GoogleService-Info.plist */; };
 		EDE6C3411D0E50E700FD5647 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6C3401D0E50E700FD5647 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		ED160B8B1CDC33E4000EA3CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED160B911CDC3778000EA3CD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		ED4EB5B71CEEA79E00189E8D /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		EDA8EA761D0FA9C000F2C859 /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		EDA8EA781D0FAA8F00F2C859 /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 		EDD519441CE1A98C00A074F8 /* CampManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CampManager.entitlements; sourceTree = "<group>"; };
 		EDE6C33E1D093C4300FD5647 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDE6C3401D0E50E700FD5647 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -90,12 +94,12 @@
 			isa = PBXGroup;
 			children = (
 				ED6F82741D0675DC009D8A79 /* Model */,
-				ED4EB5B71CEEA79E00189E8D /* Pin.swift */,
 				EDE6C33E1D093C4300FD5647 /* GoogleService-Info.plist */,
 				EDD519441CE1A98C00A074F8 /* CampManager.entitlements */,
 				ED160B7C1CDC33E4000EA3CD /* AppDelegate.swift */,
 				ED160B7E1CDC33E4000EA3CD /* ViewController.swift */,
 				ED160B911CDC3778000EA3CD /* MapViewController.swift */,
+				EDA8EA761D0FA9C000F2C859 /* InventoryViewController.swift */,
 				EDE6C3401D0E50E700FD5647 /* LoginViewController.swift */,
 				ED160B801CDC33E4000EA3CD /* Main.storyboard */,
 				ED160B861CDC33E4000EA3CD /* Assets.xcassets */,
@@ -109,6 +113,8 @@
 		ED6F82741D0675DC009D8A79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ED4EB5B71CEEA79E00189E8D /* Pin.swift */,
+				EDA8EA781D0FAA8F00F2C859 /* item.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -242,9 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA8EA771D0FA9C000F2C859 /* InventoryViewController.swift in Sources */,
 				EDE6C3411D0E50E700FD5647 /* LoginViewController.swift in Sources */,
 				ED160B851CDC33E4000EA3CD /* CampManager.xcdatamodeld in Sources */,
 				ED160B7F1CDC33E4000EA3CD /* ViewController.swift in Sources */,
+				EDA8EA791D0FAA8F00F2C859 /* item.swift in Sources */,
 				ED160B7D1CDC33E4000EA3CD /* AppDelegate.swift in Sources */,
 				ED4EB5B91CEEA79E00189E8D /* Pin.swift in Sources */,
 				ED160B921CDC3778000EA3CD /* MapViewController.swift in Sources */,

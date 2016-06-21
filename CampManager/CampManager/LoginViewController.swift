@@ -29,14 +29,17 @@ class LoginViewController: UIViewController {
         }
             
         else {
-
-            FIRAuth.auth()?.signInWithEmail(emailField.text!, password:passwordField.text!) { (user, error) in
+            
+            FIRAuth.auth()?.signInWithEmail(emailField.text!, password:passwordField.text!) { (user, error)
                 
+            
+                in
+            
                 if error != nil {
                     
                     print(error!.description)
                 }
-                
+                    
                 else {
                     
                     self.performSegueWithIdentifier("menuSegue", sender: nil)
@@ -48,26 +51,66 @@ class LoginViewController: UIViewController {
     }
     
     
+    @IBAction func registerButton(sender: AnyObject) {
+        
+        
+        let alert = UIAlertController(title: "Register",
+                                      message: "Sign up now!",
+                                      preferredStyle: .Alert)
+        
+        let saveAction = UIAlertAction(title: "Save",
+                                       style: .Default) { (action: UIAlertAction!) -> Void in
+                                        
+                                        let emailField = alert.textFields![0]
+                                        let passwordField = alert.textFields![1]
+                                        
+                                        FIRAuth.auth()?.createUserWithEmail(emailField.text!, password:passwordField.text!) { (user, error) in
+                                            
+                                            if error != nil {
+                                                
+                                                print(error!.description)
+                                            }
+                                                
+                                            else {
+                                                
+                                                self.performSegueWithIdentifier("menuSegue", sender: nil)
+                                                
+                                            }
+                                        }
+                                        
+                                        
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .Default) { (action: UIAlertAction!) -> Void in
+        }
+        
+        alert.addTextFieldWithConfigurationHandler {
+            (textEmail) -> Void in
+            textEmail.placeholder = "Enter your email"
+        }
+        
+        alert.addTextFieldWithConfigurationHandler {
+            (textPassword) -> Void in
+            textPassword.secureTextEntry = true
+            textPassword.placeholder = "Enter your password"
+        }
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        
+        presentViewController(alert,
+                              animated: true,
+                              completion: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-//    override func viewDidAppear(animated: Bool) {
-//        super.viewDidAppear(animated)
-//        
-//        if FIRAuth.auth()?.currentUser = true {
-//            
-//
-//        }
-//            
-//            
-//        }
     
-    
-    
-    //
     
     
     override func didReceiveMemoryWarning() {
