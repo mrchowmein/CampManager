@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 
 class LoginViewController: UIViewController {
@@ -42,6 +43,8 @@ class LoginViewController: UIViewController {
                     
                 else {
                     
+                    self.emailField.text = ""
+                    self.passwordField.text = ""
                     self.performSegueWithIdentifier("menuSegue", sender: nil)
                     
                 }
@@ -110,6 +113,17 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        FIRAuth.auth()?.addAuthStateDidChangeListener({ (auth:FIRAuth, user:FIRUser?) in
+            if let user = user {
+                print("Welcome \(user.email)")
+                self.performSegueWithIdentifier("menuSegue", sender: nil)
+            }else{
+                print("You need to sign up or login first")
+            }
+        })
+
+    }
     
     
     
