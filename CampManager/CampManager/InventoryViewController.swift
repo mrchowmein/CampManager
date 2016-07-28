@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class InventoryViewController: UITableViewController {
     
@@ -164,7 +165,7 @@ class InventoryViewController: UITableViewController {
             // 1
             let invItem = invItems[indexPath.row]
             // 2
-            invItem.ref?.removeValue()
+//            invItem.ref?.removeValue()
      }
      }
     

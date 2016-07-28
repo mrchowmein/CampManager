@@ -12,6 +12,11 @@ import CoreData
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     
+    @IBAction func backButtonMap(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     var appDelegate: AppDelegate!
     var sharedContext: NSManagedObjectContext!
     
@@ -30,9 +35,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func findMeButton(sender: AnyObject) {
         
         let userLocation = mapView.userLocation
+        
+        if userLocation.location != nil {
         let region = MKCoordinateRegionMakeWithDistance(
             userLocation.location!.coordinate, 2000, 2000)
+        
+        
         mapView.setRegion(region, animated: true)
+        }
     }
     
     
