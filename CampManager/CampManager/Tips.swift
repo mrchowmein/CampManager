@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Tips {
+struct Tips {
     
     var imageName = ""
     var description = ""
