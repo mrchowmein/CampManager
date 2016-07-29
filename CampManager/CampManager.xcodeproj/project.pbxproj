@@ -19,10 +19,10 @@
 		ED43E9F61D48911800CE229F /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED43E9F51D48911800CE229F /* Members.swift */; };
 		ED4DF0501D488BCE0017D90E /* MembersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DF04F1D488BCE0017D90E /* MembersTableViewController.swift */; };
 		ED4EB5B91CEEA79E00189E8D /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4EB5B71CEEA79E00189E8D /* Pin.swift */; };
+		ED5EDEF01D49A6CF001FDDA9 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5EDEEF1D49A6CF001FDDA9 /* Items.swift */; };
+		ED5EDEF21D4B035A001FDDA9 /* InventoryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5EDEF11D4B035A001FDDA9 /* InventoryListTableViewController.swift */; };
 		EDA4F5C21D18DBD500F89EBC /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA4F5C11D18DBD500F89EBC /* Tips.swift */; };
 		EDA4F5C41D18E5FE00F89EBC /* DetailTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA4F5C31D18E5FE00F89EBC /* DetailTipsViewController.swift */; };
-		EDA8EA771D0FA9C000F2C859 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8EA761D0FA9C000F2C859 /* InventoryViewController.swift */; };
-		EDA8EA791D0FAA8F00F2C859 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8EA781D0FAA8F00F2C859 /* item.swift */; };
 		EDE6C33F1D093C4300FD5647 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDE6C33E1D093C4300FD5647 /* GoogleService-Info.plist */; };
 		EDE6C3411D0E50E700FD5647 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6C3401D0E50E700FD5647 /* LoginViewController.swift */; };
 		F9D0834723897A0F60992B81 /* Pods_CampManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F854FFB9F566FB46E84D55EE /* Pods_CampManager.framework */; };
@@ -44,10 +44,10 @@
 		ED43E9F51D48911800CE229F /* Members.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Members.swift; sourceTree = "<group>"; };
 		ED4DF04F1D488BCE0017D90E /* MembersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersTableViewController.swift; sourceTree = "<group>"; };
 		ED4EB5B71CEEA79E00189E8D /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		ED5EDEEF1D49A6CF001FDDA9 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		ED5EDEF11D4B035A001FDDA9 /* InventoryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryListTableViewController.swift; sourceTree = "<group>"; };
 		EDA4F5C11D18DBD500F89EBC /* Tips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 		EDA4F5C31D18E5FE00F89EBC /* DetailTipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTipsViewController.swift; sourceTree = "<group>"; };
-		EDA8EA761D0FA9C000F2C859 /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
-		EDA8EA781D0FAA8F00F2C859 /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 		EDD519441CE1A98C00A074F8 /* CampManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CampManager.entitlements; sourceTree = "<group>"; };
 		EDE6C33E1D093C4300FD5647 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDE6C3401D0E50E700FD5647 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 				ED160B7C1CDC33E4000EA3CD /* AppDelegate.swift */,
 				ED160B7E1CDC33E4000EA3CD /* ViewController.swift */,
 				ED4DF04F1D488BCE0017D90E /* MembersTableViewController.swift */,
+				ED5EDEF11D4B035A001FDDA9 /* InventoryListTableViewController.swift */,
 				ED160B911CDC3778000EA3CD /* MapViewController.swift */,
-				EDA8EA761D0FA9C000F2C859 /* InventoryViewController.swift */,
 				EDE6C3401D0E50E700FD5647 /* LoginViewController.swift */,
 				ED160B801CDC33E4000EA3CD /* Main.storyboard */,
 				ED190AED1D18D70900D2E705 /* TipsTableViewController.swift */,
@@ -129,10 +129,10 @@
 		ED6F82741D0675DC009D8A79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EDA8EA781D0FAA8F00F2C859 /* item.swift */,
 				ED4EB5B71CEEA79E00189E8D /* Pin.swift */,
 				EDA4F5C11D18DBD500F89EBC /* Tips.swift */,
 				ED43E9F51D48911800CE229F /* Members.swift */,
+				ED5EDEEF1D49A6CF001FDDA9 /* Items.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -266,7 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA8EA771D0FA9C000F2C859 /* InventoryViewController.swift in Sources */,
+				ED5EDEF01D49A6CF001FDDA9 /* Items.swift in Sources */,
+				ED5EDEF21D4B035A001FDDA9 /* InventoryListTableViewController.swift in Sources */,
 				ED190AF41D18D9AE00D2E705 /* TipsCell.swift in Sources */,
 				ED190AEE1D18D70900D2E705 /* TipsTableViewController.swift in Sources */,
 				EDE6C3411D0E50E700FD5647 /* LoginViewController.swift in Sources */,
@@ -275,7 +276,6 @@
 				ED160B7F1CDC33E4000EA3CD /* ViewController.swift in Sources */,
 				ED43E9F61D48911800CE229F /* Members.swift in Sources */,
 				EDA4F5C41D18E5FE00F89EBC /* DetailTipsViewController.swift in Sources */,
-				EDA8EA791D0FAA8F00F2C859 /* item.swift in Sources */,
 				ED4DF0501D488BCE0017D90E /* MembersTableViewController.swift in Sources */,
 				ED160B7D1CDC33E4000EA3CD /* AppDelegate.swift in Sources */,
 				ED4EB5B91CEEA79E00189E8D /* Pin.swift in Sources */,
