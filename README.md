@@ -10,7 +10,7 @@ The living dead are out for your flesh and humans are not to be trusted. The bes
 
 
 <table border="1" style="width:100%">
-  <tr>
+ <tr>
     <td><b> User Stories </b></td>
     <td><b> Difficulty </b> </td> 
   </tr>
@@ -27,26 +27,22 @@ The living dead are out for your flesh and humans are not to be trusted. The bes
     <td>4</td> 
   </tr>
  <tr>
-    <td>As a survivalist, I want to be able to take readings of my health such as sleep, heart rate.Technical requirement: HealthKit. CoreData</td>
+    <td>As a survivalist, I want to be able to make sure my app data is secure. Technical requirement: Firebase Auth</td>
     <td>3</td> 
   </tr>
  <tr>
-    <td>As a survivalist, I want to be able to check and store air pressure. Technical requirement: CMAltimeter, CoreData</td>
+    <td>As a survivalist, I want to be able have database of all my members, roles and their backstory. Technical requirement: Firebase Database</td>
     <td>3</td> 
   </tr>
  <tr>
-    <td>As a survivalist, I want to be able have database of all my members, roles and their backstory. Technical requirement: CoreData</td>
-    <td>3</td> 
-  </tr>
- <tr>
-    <td>As a survivalist, I want to keep records of items gathered as an inventory log. Technical requirement: CoreData</td>
+    <td>As a survivalist, I want to keep records of items gathered as an inventory log. Technical requirement: Firebase Database</td>
     <td>2</td> 
   </tr>
  <td>As a survivalist, I want to be able to browse through survival tips</td>
     <td>2</td> 
   </tr>
 <tr>
- <td>Add google analytics</td>
+ <td>Add Firebase analytics</td>
     <td>2</td> 
   </tr>
 </table>
