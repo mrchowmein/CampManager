@@ -11,6 +11,14 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
 
+    @IBAction func faqButton(sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: "Dont Touch Me!", message:
+            "Seriously... pro tip, stay away from the living dead and their bites.", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default,handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+        
+    }
     
     
     @IBAction func logOutButton(sender: AnyObject) {

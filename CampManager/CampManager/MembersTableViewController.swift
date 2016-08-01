@@ -19,24 +19,64 @@ class MembersTableViewController: UITableViewController {
     
     @IBAction func addButton(sender: AnyObject) {
         
-        let nameAlert = UIAlertController(title: "New Member", message: "Enter Name", preferredStyle: .Alert)
-        nameAlert.addTextFieldWithConfigurationHandler { (textField:UITextField) in
-            textField.placeholder = "Name"
-        }
-        nameAlert.addAction(UIAlertAction(title: "Save", style: .Default, handler: { (action:UIAlertAction) in
-            if let nameContent = nameAlert.textFields?.first?.text {
-                
-                let userEmail = FIRAuth.auth()?.currentUser?.email
-                let name = Members(name: nameContent, addedByUser: userEmail!)
-                
-                let nameRef = self.dbRef.child(nameContent.lowercaseString)
-                
-                nameRef.setValue(name.toAnyObject())
-                
-            }
-        }))
+        let alert = UIAlertController(title: "New Member", message: "Enter Name and Profession", preferredStyle: .Alert)
         
-        self.presentViewController(nameAlert, animated: true, completion: nil)
+        
+        let saveAction = UIAlertAction(title: "Save",
+                                       style: .Default) { (action: UIAlertAction!) -> Void in
+                                        
+                                        let nameField = alert.textFields?[0].text
+                                        let profField = alert.textFields?[1].text
+                                        
+                                        let name = Members(name: nameField!, prof: profField!)
+                                        
+                                        let nameRef = self.dbRef.child(nameField!.lowercaseString)
+                                        
+                                        nameRef.setValue(name.toAnyObject())
+                                        
+                                        
+        }
+        
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .Default) { (action: UIAlertAction!) -> Void in
+        }
+        
+        alert.addTextFieldWithConfigurationHandler {
+            (itemField) -> Void in
+            itemField.placeholder = "Enter Name"
+        }
+        
+        alert.addTextFieldWithConfigurationHandler {
+            (qtyField) -> Void in
+            qtyField.placeholder = "Enter Prof"
+            
+            alert.addAction(saveAction)
+            alert.addAction(cancelAction)
+            
+            self.presentViewController(alert,
+                animated: true,
+                completion: nil)
+        }
+        
+//        let nameAlert = UIAlertController(title: "New Member", message: "Enter Name", preferredStyle: .Alert)
+//        nameAlert.addTextFieldWithConfigurationHandler { (textField:UITextField) in
+//            textField.placeholder = "Name"
+//        }
+//        nameAlert.addAction(UIAlertAction(title: "Save", style: .Default, handler: { (action:UIAlertAction) in
+//            if let nameContent = nameAlert.textFields?.first?.text {
+//                
+//                let userEmail = FIRAuth.auth()?.currentUser?.email
+//                let name = Members(name: nameContent, addedByUser: userEmail!)
+//                
+//                let nameRef = self.dbRef.child(nameContent.lowercaseString)
+//                
+//                nameRef.setValue(name.toAnyObject())
+//                
+//            }
+//        }))
+//        
+//        self.presentViewController(nameAlert, animated: true, completion: nil)
     }
     
     
@@ -105,7 +145,7 @@ class MembersTableViewController: UITableViewController {
         let name = names[indexPath.row]
         
         cell.textLabel?.text = name.name
-        //cell.detailTextLabel?.text = name.addedByUser
+        cell.detailTextLabel?.text = name.prof
         
         return cell
     }

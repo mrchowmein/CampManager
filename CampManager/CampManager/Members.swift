@@ -14,13 +14,13 @@ struct Members {
     
     let key:String!
     let name:String!
-    let addedByUser:String!
+    let prof:String!
     let itemRef:FIRDatabaseReference?
     
-    init (name:String, addedByUser:String, key:String = "") {
+    init (name:String, prof:String, key:String = "") {
         self.key = key
         self.name = name
-        self.addedByUser = addedByUser
+        self.prof = prof
         self.itemRef = nil
     }
     
@@ -34,16 +34,16 @@ struct Members {
             name = ""
         }
         
-        if let nameUser = snapshot.value!["addedByUser"] as? String {
-            addedByUser = nameUser
+        if let nameUser = snapshot.value!["prof"] as? String {
+            prof = nameUser
         }else {
-            addedByUser = ""
+            prof = ""
         }
         
     }
     
     func toAnyObject() -> AnyObject {
-        return ["name":name, "addedByUser":addedByUser]
+        return ["name":name, "prof":prof]
     }
     
 }
