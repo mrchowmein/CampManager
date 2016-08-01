@@ -16,6 +16,17 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
+    
+    
+    @IBAction func faqButton(sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: "What is Camp Manager?", message:
+            "The living dead are out for your flesh and humans are not to be trusted. The best chance of survival is to form a group with people you can rely on. As civilization crumbles in this apocalyptic world, Camp Manager is the only app you need to manage the day to day survival of your group. The days of pen and paper are gone. Why try to keep track of your group with a depleting resource like a notebook? This app will allow you to save POIs and manage your camp resources.", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default,handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+        
+    }
+    
     @IBAction func loginButton(sender: AnyObject) {
         
         if emailField.text == "" && passwordField.text == "" {
@@ -23,30 +34,19 @@ class LoginViewController: UIViewController {
             let alertController = UIAlertController(title: "Not so fast!", message:
                 "Please enter email and password", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-            
             self.presentViewController(alertController, animated: true, completion: nil)
-            
-            
         }
-            
         else {
             
-            FIRAuth.auth()?.signInWithEmail(emailField.text!, password:passwordField.text!) { (user, error)
-                
-            
-                in
-            
+            FIRAuth.auth()?.signInWithEmail(emailField.text!, password:passwordField.text!) { (user, error) in
                 if error != nil {
-                    
                     print(error!.description)
                 }
                     
                 else {
-                    
                     self.emailField.text = ""
                     self.passwordField.text = ""
                     self.performSegueWithIdentifier("menuSegue", sender: nil)
-                    
                 }
             }
             
@@ -122,7 +122,7 @@ class LoginViewController: UIViewController {
                 print("You need to sign up or login first")
             }
         })
-
+        
     }
     
     
