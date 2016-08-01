@@ -4,7 +4,7 @@ Camp Manager: A comprehensive group survival management tool
 
 **Use Case**
 
-The undead are out for your flesh and your not all people are to be trusted. The best chance of your survival is to form a group with people you can rely on. As civilization crumbles in a zombie apocalyptic world, Camp Manager is the only app you need to manage the day to day survival of your group.  The days of pen and paper are gone. Why try to keep track of your group with a depleting resource like a notebook?  This app will allow to keep track of your group’s discoveries and keep tabs on your members.
+The living dead are out for your flesh and humans are not to be trusted. The best chance of survival is to form a group with people you can rely on. As civilization crumbles in this apocalyptic world, Camp Manager is the only app you need to manage the day to day survival of your group. The days of pen and paper are gone. Why try to keep track of your group with a depleting resource like a notebook? This app will allow you to save POIs and manage your camp resources.
 
 
 
